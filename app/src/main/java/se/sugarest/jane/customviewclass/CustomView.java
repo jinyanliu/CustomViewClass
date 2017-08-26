@@ -73,9 +73,9 @@ public class CustomView extends View {
         // it has some space around it.
         int radius = 0;
         if (viewWidthHalf > viewHeightHalf) {
-            radius = viewHeightHalf - 10;
+            radius = viewHeightHalf - 20;
         } else {
-            radius = viewWidthHalf - 10;
+            radius = viewWidthHalf - 20;
         }
 
         circlePaint.setStyle(Paint.Style.FILL);
