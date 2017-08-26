@@ -3,7 +3,6 @@ package se.sugarest.jane.customviewclass;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnPressed(View view) {
-        Log.i(TAG, "Text in the circle is: " + mCustomView.getCircleText());
-        if (mCustomView.getCircleText() == "Hello") {
+        boolean isTextEquals = ("Hello".equals(mCustomView.getCircleText()));
+        if (isTextEquals) {
             mCustomView.setCircleColor(Color.GREEN);
             mCustomView.setLabelColor(Color.MAGENTA);
             mCustomView.setCircleText("hehe");
