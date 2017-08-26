@@ -85,4 +85,40 @@ public class CustomView extends View {
 
         canvas.drawCircle(viewWidthHalf, viewHeightHalf, radius, circlePaint);
     }
+
+    public int getCircleColor() {
+        return circleColor;
+    }
+
+    public void setCircleColor(int circleColor) {
+        // update the instance variable
+        this.circleColor = circleColor;
+        // redraw the view
+        invalidate();
+        requestLayout();
+    }
+
+    public int getLabelColor() {
+        return labelColor;
+    }
+
+    public void setLabelColor(int labelColor) {
+        // update the instance variable
+        this.labelColor = labelColor;
+        // redraw the view
+        invalidate();
+        requestLayout();
+    }
+
+    public String getCircleText() {
+        return circleText;
+    }
+
+    public void setCircleText(String circleText) {
+        // update the instance variable
+        this.circleText = circleText;
+        // redraw the view
+        invalidate();
+        requestLayout();
+    }
 }
